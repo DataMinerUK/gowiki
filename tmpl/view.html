@@ -1,5 +1,15 @@
-<h1>{{.Title}}</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Wiki made using Golang
+  </title>
+</head>
+<body>
+  <h1>{{.Title}}</h1>
 
-<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+  <p>[<a href="/edit/{{.Title}}">edit</a>]</p>
 
-<div>{{printf "%s" .Body}}</div>
+  <div>{{.Display}}</div>
+</body>
+</html>
